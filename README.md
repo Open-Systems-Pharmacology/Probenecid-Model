@@ -2,7 +2,7 @@
 Mechanistic PBPK model of probenecid (clinical OAT inhibitor)
  
 ### Repository files
-Within this repository, we share a whole-body PBPK model of probenecid. The model was developed using data of 27 clinical studies (dosing range 250–2000 mg), and qualified for DDI prediction with the OAT victim drug furosemide and OATP1B1 substrate rifampicin. 
+Within this repository, we share a whole-body PBPK model of probenecid. The model was developed using data of 27 clinical studies (dosing range 250–2000 mg), and qualified for DDI prediction with the OAT victim drug furosemide and the OATP1B1 substrate rifampicin. 
 
 The PK-Sim project file contains simulations and the observed data of all clinical studies used for model development and evaluation. For further details, quantitative model evaluation, sensitivity analysis and extensive documentation please refer to [[1](#reference)].
  
