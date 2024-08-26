@@ -1,0 +1,562 @@
+﻿{
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.1/OSP_Qualification_Plan_Schema.json",
+    "Projects": [
+        {
+            "Id": "Probenecid",
+            "Path": "../../Probenecid-Model.json",
+            "BuildingBlocks": []
+        }
+    ],
+    "ObservedDataSets": [],
+    "Plots": {
+        "PlotSettings": {
+            "ChartWidth": 500,
+            "ChartHeight": 400,
+            "Fonts": {
+                "AxisSize": 11,
+                "LegendSize": 9,
+                "OriginSize": 9,
+                "FontFamilyName": "Arial",
+                "WatermarkSize": 40
+            }
+        },
+        "AxesSettings": {
+            "ComparisonTimeProfile": [
+                {
+                    "Unit": "h",
+                    "Dimension": "Time",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsPredictedVsObserved": [
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "DDIRatioPlotsResidualsVsObserved": [
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "GOFMergedPlotsPredictedVsObserved": [
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "µg/l",
+                    "Dimension": "Concentration (mass)",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ],
+            "GOFMergedPlotsResidualsOverTime": [
+                {
+                    "Unit": "h",
+                    "Dimension": "Time",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Linear"
+                }
+            ],
+            "PKRatioPlots": [
+                {
+                    "Unit": "year(s)",
+                    "Dimension": "Age",
+                    "Type": "X",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                },
+                {
+                    "Unit": "",
+                    "Dimension": "Dimensionless",
+                    "Type": "Y",
+                    "GridLines": false,
+                    "Scaling": "Log"
+                }
+            ]
+        },
+        "AllPlots": [
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject A_1860mg_i.v._s.d._1",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject B_1860mg_i.v._s.d._3",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject C_1860mg_i.v._s.d._5",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject D_1860mg_i.v._s.d._7",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject C_464.2mg_i.v._s.d._6",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject D_464.2mg_i.v._s.d._8",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject E_1860mg_i.v._s.d._9",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject E_464.2mg_i.v._s.d._10",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Emanuelsson 1987_500mg_i.v._s.d._14",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Landersdorfer 2009_500mg_p.o._b.i.d._21",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Landersdorfer 2010_3000mg_p.o._m.d._50",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Smith 1980_1000mg_p.o._b.i.d._6002",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Wiebe 2020_1000mg_p.o._b.i.d._6005",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject A_2000mg_p.o._s.d._2",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Dayton 1963 - Subject B_2000mg_p.o._s.d._4",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Emanuelsson 1987_1000mg_p.o._s.d._12",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Emanuelsson 1987_2000mg_p.o._s.d._13",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Emanuelsson 1987_500mg_p.o._s.d._11",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Selen 1982_1000mg_p.o._s.d._29",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Selen 1982_2000mg_p.o._s.d._30",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Selen 1982_500mg_p.o._s.d._28",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Shen 2019_1000mg_p.o._s.d._5003",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Vree 1992_1000mg_p.o._s.d._36+37",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Vree 1992_1500mg_p.o._s.d._38+39",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Vree 1992_250mg_p.o._s.d._32+33",
+                "SectionId": 331
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Vree 1992_500mg_p.o._s.d._34+35",
+                "SectionId": 332
+            },
+            {
+                "Project": "Probenecid",
+                "Simulation": "Vree 1993_1000mg_p.o._s.d._44+45",
+                "SectionId": 332
+            }
+        ],
+        "GOFMergedPlots": [
+            {
+                "Title": "Goodness of fit plot for concentration in plasma.",
+                "SectionId": 32,
+                "Artifacts": [
+                    "Plot",
+                    "GMFE",
+                    "Measure"
+                ],
+                "PlotType": "predictedVsObserved|residualsOverTime",
+                "Groups": [
+                    {
+                        "Caption": "Probenecid iv (model building)",
+                        "Symbol": "Circle",
+                        "OutputMappings": [
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject A_1860mg_i.v._s.d._1",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 1860 mg IV Subject A - Probenecid - IV - 1860 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject B_1860mg_i.v._s.d._3",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 1860 mg IV Subject B - Probenecid - IV - 1860 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject C_1860mg_i.v._s.d._5",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 1860 mg IV Subject C - Probenecid - IV - 1860 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject D_1860mg_i.v._s.d._7",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 1860 mg IV Subject D - Probenecid - IV - 1860 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject C_464.2mg_i.v._s.d._6",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 464.2 mg IV Subject C - Probenecid - IV - 464.2 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject D_464.2mg_i.v._s.d._8",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 464.2 mg IV Subject D - Probenecid - IV - 464.2 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject E_1860mg_i.v._s.d._9",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 1860 mg IV Subject E - Probenecid - IV - 1860 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject E_464.2mg_i.v._s.d._10",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 464.2 mg IV Subject E - Probenecid - IV - 464.2 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Emanuelsson 1987_500mg_i.v._s.d._14",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Emanuelsson 1987 - 500 mg iv - Probenecid - IV - 500 mg - Plasma - agg. (n=6)",
+                                "Color": "#000000"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Probenecid oral administration (model building)",
+                        "Symbol": "Diamond",
+                        "OutputMappings": [
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Landersdorfer 2009_500mg_p.o._b.i.d._21",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Landersdorfer 2009 - 500 mg BID - Probenecid - PO - 1000;1000;250;250;500;500;500;500; mg - Plasma - agg. (n=17)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Wiebe 2020_1000mg_p.o._b.i.d._6005",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Wiebe 2020 - 1000 mg BID Therapeutic dose - Probenecid - PO - 1000;1000 mg - Plasma - agg. (n=16)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Emanuelsson 1987_2000mg_p.o._s.d._13",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Emanuelsson 1987 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=6)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Selen 1982_1000mg_p.o._s.d._29",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Selen 1982 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=5)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Selen 1982_2000mg_p.o._s.d._30",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Selen 1982 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=5)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Selen 1982_500mg_p.o._s.d._28",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Selen 1982 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=5)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Vree 1992_1500mg_p.o._s.d._38+39",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Vree 1992 - 1500 mg po - Probenecid - PO - 1500 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Vree 1992_250mg_p.o._s.d._32+33",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Vree 1992 - 250 mg po - Probenecid - PO - 250 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            }
+                        ]
+                    },
+                    {
+                        "Caption": "Probenecid oral administration (model verification)",
+                        "Symbol": "Triangle",
+                        "OutputMappings": [
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Landersdorfer 2010_3000mg_p.o._m.d._50",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Landersdorfer 2010 - 500-1000-500x3 mg - Probenecid - PO - 500;1000;500;500;500 mg - Plasma - agg. (n=12)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Smith 1980_1000mg_p.o._b.i.d._6002",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Smith 1980a - 1000 mg BID - Probenecid - PO - 1000;1000 mg - Plasma - agg. (n=4)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject A_2000mg_p.o._s.d._2",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 2000 mg PO Subject A - Probenecid - PO - 2000 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Dayton 1963 - Subject B_2000mg_p.o._s.d._4",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Dayton 1963 - 2000 mg PO Subject B - Probenecid - PO - 2000 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Emanuelsson 1987_1000mg_p.o._s.d._12",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Emanuelsson 1987 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=6)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Emanuelsson 1987_500mg_p.o._s.d._11",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Emanuelsson 1987 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=6)",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Vree 1992_1000mg_p.o._s.d._36+37",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Vree 1992 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Vree 1992_500mg_p.o._s.d._34+35",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Vree 1992 - 500 mg po - Probenecid - PO - 500 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            },
+                            {
+                                "Project": "Probenecid",
+                                "Simulation": "Vree 1993_1000mg_p.o._s.d._44+45",
+                                "Output": "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
+                                "ObservedData": "Vree 1992 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - indiv.",
+                                "Color": "#000000"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "ComparisonTimeProfilePlots": [],
+        "DDIRatioPlots": [],
+        "PKRatioPlots": []
+    },
+    "Inputs": [
+        {
+            "Project": "Probenecid",
+            "Name": "Probenecid",
+            "Type": "Compound",
+            "SectionId": 31
+        }
+    ],
+    "Sections": [
+        {
+            "Id": 1,
+            "Title": "Introduction",
+            "Content": "Content/Section1_Introduction.md"
+        },
+        {
+            "Id": 2,
+            "Title": "Methods",
+            "Content": "Content/Section2_Methods.md",
+            "Sections": [
+                {
+                    "Id": 21,
+                    "Content": "Content/Section2.1_Modeling_Strategy.md",
+                    "Title": "Modeling strategy"
+                },
+                {
+                    "Id": 22,
+                    "Content": "Content/Section2.2_Data.md",
+                    "Title": "Data used"
+                },
+                {
+                    "Id": 23,
+                    "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md",
+                    "Title": "Model parameters and assumptions"
+                }
+            ]
+        },
+        {
+            "Id": 3,
+            "Content": "Content/Section3_Results_and_Discussion.md",
+            "Title": "Results and Discussion",
+            "Sections": [
+                {
+                    "Id": 31,
+                    "Content": "Content/Input_table.md",
+                    "Title": "Probenecid final input parameters"
+                },
+                {
+                    "Id": 32,
+                    "Content": "Content/GOF_diagnostics.md",
+                    "Title": "Probenecid Diagnostics Plots"
+                },
+                {
+                    "Id": 33,
+                    "Title": "Concentration-Time Profiles",
+                    "Content": "Content/Concentration_time_profiles.md",
+                    "Sections": [
+                        {
+                            "Id": 331,
+                            "Title": "Model Building",
+                            "Content": "Content/Concentration_time_profiles_building.md"
+                        },
+                        {
+                            "Id": 332,
+                            "Title": "Model Verification",
+                            "Content": "Content/Concentration_time_profiles_verification.md"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Id": 4,
+            "Content": "Content/Section4_Conclusion.md",
+            "Title": "Conclusion"
+        },
+        {
+            "Id": 5,
+            "Content": "Content/References.md",
+            "Title": "References"
+        }
+    ],
+    "Intro": [
+        {
+            "Path": "Content/titlepage.md"
+        }
+    ]
+}
