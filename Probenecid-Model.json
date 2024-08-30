@@ -7040,7 +7040,12 @@
           "Parameters": [
             {
               "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.117
+              "Value": 0.117,
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Vree 1992"
+              }
             }
           ]
         }
@@ -7052,11 +7057,21 @@
             {
               "Name": "Solubility at reference pH",
               "Value": 738.0,
-              "Unit": "mg/l"
+              "Unit": "mg/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Söderlind 2010, HIF"
+              }
             },
             {
               "Name": "Reference pH",
-              "Value": 7.0
+              "Value": 7.0,
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Söderlind 2010, HIF"
+              }
             }
           ]
         }
@@ -7112,7 +7127,12 @@
             {
               "Name": "Ki",
               "Value": 5.41,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Tsuruya 2016"
+              }
             }
           ]
         },
@@ -7124,12 +7144,22 @@
             {
               "Name": "In vitro Vmax for liver microsomes",
               "Value": 59.0,
-              "Unit": "pmol/min/mg mic. protein"
+              "Unit": "pmol/min/mg mic. protein",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Ito 2014"
+              }
             },
             {
               "Name": "Km",
               "Value": 198.3,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Ito 2014"
+              }
             },
             {
               "Name": "kcat",
@@ -7188,7 +7218,29 @@
             {
               "Name": "Ki",
               "Value": 39.8,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Izumi 2016"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "CompetitiveInhibition",
+          "DataSource": "In vivo Ki based on CP-I",
+          "Molecule": "OATP1B1",
+          "Parameters": [
+            {
+              "Name": "Ki",
+              "Value": 17.89,
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "based on CP-I plasma levels"
+              }
             }
           ]
         },
@@ -7200,7 +7252,12 @@
             {
               "Name": "Ki",
               "Value": 242.0,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "InVitro",
+                "Description": "Wang 2020"
+              }
             }
           ]
         },
@@ -7212,7 +7269,12 @@
             {
               "Name": "Ki",
               "Value": 87.396448408,
-              "Unit": "µmol/l"
+              "Unit": "µmol/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Method": "ParameterIdentification",
+                "Description": "Wiebe 2020"
+              }
             }
           ]
         }
@@ -8322,8 +8384,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -8395,13 +8456,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -8419,17 +8477,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject A_1860mg_i.v._s.d._1-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject A_1860mg_i.v._s.d._1|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 1860 mg IV Subject A - Probenecid - IV - 1860 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 1860 mg IV Subject A - Probenecid - IV - 1860 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 1860 mg IV Subject A - Probenecid - IV - 1860 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -8441,7 +8488,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 1860 mg IV Subject A",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -8459,7 +8506,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid-Model-V11\nDayton 1963 - Subject A_1860mg_i.v._s.d._1\n2024-06-26 17:56"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject A_1860mg_i.v._s.d._1\n2024-08-28 09:44"
         }
       ]
     },
@@ -8526,8 +8573,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -8599,13 +8645,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -8623,17 +8666,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject B_1860mg_i.v._s.d._3-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject B_1860mg_i.v._s.d._3|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 1860 mg IV Subject B - Probenecid - IV - 1860 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 1860 mg IV Subject B - Probenecid - IV - 1860 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 1860 mg IV Subject B - Probenecid - IV - 1860 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -8645,7 +8677,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 1860 mg IV Subject B",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -8663,7 +8695,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject B_1860mg_i.v._s.d._3\n2020-09-09 13:17"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject B_1860mg_i.v._s.d._3\n2024-08-28 09:45"
         }
       ]
     },
@@ -8730,8 +8762,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -8803,13 +8834,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -8827,17 +8855,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject C_1860mg_i.v._s.d._5-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject C_1860mg_i.v._s.d._5|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 1860 mg IV Subject C - Probenecid - IV - 1860 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 1860 mg IV Subject C - Probenecid - IV - 1860 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 1860 mg IV Subject C - Probenecid - IV - 1860 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -8849,7 +8866,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 1860 mg IV Subject C",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -8867,7 +8884,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject C_1860mg_i.v._s.d._5\n2020-09-09 13:18"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject C_1860mg_i.v._s.d._5\n2024-08-28 09:45"
         }
       ]
     },
@@ -8934,8 +8951,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -9007,13 +9023,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -9031,17 +9044,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject D_1860mg_i.v._s.d._7-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject D_1860mg_i.v._s.d._7|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 1860 mg IV Subject D - Probenecid - IV - 1860 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 1860 mg IV Subject D - Probenecid - IV - 1860 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 1860 mg IV Subject D - Probenecid - IV - 1860 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -9053,7 +9055,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 1860 mg IV Subject D",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -9071,7 +9073,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject D_1860mg_i.v._s.d._7\n2020-09-09 13:18"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject D_1860mg_i.v._s.d._7\n2024-08-28 09:46"
         }
       ]
     },
@@ -9138,8 +9140,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -9211,13 +9212,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -9235,17 +9233,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject E_1860mg_i.v._s.d._9-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject E_1860mg_i.v._s.d._9|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 1860 mg IV Subject E - Probenecid - IV - 1860 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 1860 mg IV Subject E - Probenecid - IV - 1860 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 1860 mg IV Subject E - Probenecid - IV - 1860 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -9257,7 +9244,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 1860 mg IV Subject E",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -9275,7 +9262,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject E_1860mg_i.v._s.d._9\n2020-09-09 13:19"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject E_1860mg_i.v._s.d._9\n2024-08-28 09:46"
         }
       ]
     },
@@ -9342,8 +9329,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -9415,13 +9401,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -9439,17 +9422,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject C_464.2mg_i.v._s.d._6-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject C_464.2mg_i.v._s.d._6|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 464.2 mg IV Subject C - Probenecid - IV - 464.2 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 464.2 mg IV Subject C - Probenecid - IV - 464.2 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 464.2 mg IV Subject C - Probenecid - IV - 464.2 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -9461,7 +9433,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 464.2 mg IV Subject C",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -9479,7 +9451,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject C_464.2mg_i.v._s.d._6\n2020-09-09 13:18"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject C_464.2mg_i.v._s.d._6\n2024-08-28 09:45"
         }
       ]
     },
@@ -9546,8 +9518,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -9619,13 +9590,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -9643,17 +9611,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject D_464.2mg_i.v._s.d._8-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject D_464.2mg_i.v._s.d._8|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 464.2 mg IV Subject D - Probenecid - IV - 464.2 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 464.2 mg IV Subject D - Probenecid - IV - 464.2 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 464.2 mg IV Subject D - Probenecid - IV - 464.2 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -9665,7 +9622,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 464.2 mg IV Subject D - Probenecid - IV - 464.2 mg - Plasma - indiv.",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -9683,7 +9640,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject D_464.2mg_i.v._s.d._8\n2020-09-09 13:18"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject D_464.2mg_i.v._s.d._8\n2024-08-28 09:46"
         }
       ]
     },
@@ -9750,8 +9707,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -9823,13 +9779,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -9847,17 +9800,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject E_464.2mg_i.v._s.d._10-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject E_464.2mg_i.v._s.d._10|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 464.2 mg IV Subject E - Probenecid - IV - 464.2 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 464.2 mg IV Subject E - Probenecid - IV - 464.2 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 464.2 mg IV Subject E - Probenecid - IV - 464.2 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -9869,7 +9811,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 464.2 mg IV Subject E",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -9887,7 +9829,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject E_464.2mg_i.v._s.d._10\n2020-09-09 13:19"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject E_464.2mg_i.v._s.d._10\n2024-08-28 09:46"
         }
       ]
     },
@@ -9961,8 +9903,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10034,13 +9975,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -10058,17 +9996,6 @@
               }
             },
             {
-              "Name": "Emanuelsson 1987_500mg_i.v._s.d._14-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Emanuelsson 1987_500mg_i.v._s.d._14|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Emanuelsson 1987 - 500 mg iv - Probenecid - IV - 500 mg - Plasma - agg. (n=6)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Emanuelsson 1987 - 500 mg iv - Probenecid - IV - 500 mg - Plasma - agg. (n=6)|Time",
               "Y": "Emanuelsson 1987 - 500 mg iv - Probenecid - IV - 500 mg - Plasma - agg. (n=6)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -10080,7 +10007,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Emanuelsson 1987 - 500 mg iv",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -10098,7 +10025,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nEmanuelsson 1987_500mg_i.v._s.d._14\n2020-09-09 13:21"
+          "OriginText": "Probenecid-Model\nEmanuelsson 1987_500mg_i.v._s.d._14\n2024-08-28 09:46"
         }
       ]
     },
@@ -10141,8 +10068,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10220,13 +10146,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -10244,17 +10167,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject A_2000mg_p.o._s.d._2-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject A_2000mg_p.o._s.d._2|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 2000 mg PO Subject A - Probenecid - PO - 2000 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 2000 mg PO Subject A - Probenecid - PO - 2000 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 2000 mg PO Subject A - Probenecid - PO - 2000 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -10266,7 +10178,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 2000 mg PO Subject A",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -10284,7 +10196,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject A_2000mg_p.o._s.d._2\n2020-09-09 13:29"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject A_2000mg_p.o._s.d._2\n2024-08-28 10:59"
         }
       ]
     },
@@ -10327,8 +10239,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10406,13 +10317,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -10430,17 +10338,6 @@
               }
             },
             {
-              "Name": "Dayton 1963 - Subject B_2000mg_p.o._s.d._4-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Dayton 1963 - Subject B_2000mg_p.o._s.d._4|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Dayton 1963 - 2000 mg PO Subject B - Probenecid - PO - 2000 mg - Plasma - indiv.-Probenecid-Peripheral Venous Blood-Plasma-Individual",
               "X": "Dayton 1963 - 2000 mg PO Subject B - Probenecid - PO - 2000 mg - Plasma - indiv.|Time",
               "Y": "Dayton 1963 - 2000 mg PO Subject B - Probenecid - PO - 2000 mg - Plasma - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|Individual",
@@ -10452,7 +10349,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Dayton 1963 - 2000 mg PO Subject B",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -10470,7 +10367,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nDayton 1963 - Subject B_2000mg_p.o._s.d._4\n2020-09-09 13:18"
+          "OriginText": "Probenecid-Model\nDayton 1963 - Subject B_2000mg_p.o._s.d._4\n2024-08-28 11:00"
         }
       ]
     },
@@ -10519,8 +10416,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10606,13 +10502,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -10627,17 +10520,6 @@
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Wiebe 2020_1000mg_p.o._b.i.d._6005-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Wiebe 2020_1000mg_p.o._b.i.d._6005|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
               }
             },
             {
@@ -10663,7 +10545,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Wiebe 2020 - 1000 mg BID",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -10681,7 +10563,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nWiebe 2020_1000mg_p.o._b.i.d._6005\n2020-09-09 13:27"
+          "OriginText": "Probenecid-Model\nWiebe 2020_1000mg_p.o._b.i.d._6005\n2024-08-28 10:59"
         }
       ]
     },
@@ -10727,8 +10609,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10806,13 +10687,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -10830,17 +10708,6 @@
               }
             },
             {
-              "Name": "Selen 1982_1000mg_p.o._s.d._29-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Selen 1982_1000mg_p.o._s.d._29|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Selen 1982 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=5)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Selen 1982 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=5)|Time",
               "Y": "Selen 1982 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -10852,7 +10719,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Selen 1982 - 1000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -10870,7 +10737,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nSelen 1982_1000mg_p.o._s.d._29\n2020-09-09 13:24"
+          "OriginText": "Probenecid-Model\nSelen 1982_1000mg_p.o._s.d._29\n2024-08-28 11:02"
         }
       ]
     },
@@ -10913,8 +10780,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -10992,13 +10858,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -11016,17 +10879,6 @@
               }
             },
             {
-              "Name": "Selen 1982_500mg_p.o._s.d._28-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Selen 1982_500mg_p.o._s.d._28|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Selen 1982 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=5)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Selen 1982 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=5)|Time",
               "Y": "Selen 1982 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -11038,7 +10890,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Selen 1982 - 500 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -11056,7 +10908,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nSelen 1982_500mg_p.o._s.d._28\n2020-09-09 13:25"
+          "OriginText": "Probenecid-Model\nSelen 1982_500mg_p.o._s.d._28\n2024-08-28 11:02"
         }
       ]
     },
@@ -11134,8 +10986,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -11213,13 +11064,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -11237,17 +11085,6 @@
               }
             },
             {
-              "Name": "Landersdorfer 2009_500mg_p.o._b.i.d._21-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Landersdorfer 2009_500mg_p.o._b.i.d._21|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Landersdorfer 2009 - 500 mg BID - Probenecid - PO - 1000;1000;250;250;500;500;500;500; mg - Plasma - agg. (n=17)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Landersdorfer 2009 - 500 mg BID - Probenecid - PO - 1000;1000;250;250;500;500;500;500; mg - Plasma - agg. (n=17)|Time",
               "Y": "Landersdorfer 2009 - 500 mg BID - Probenecid - PO - 1000;1000;250;250;500;500;500;500; mg - Plasma - agg. (n=17)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -11259,7 +11096,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Landersdorfer 2009 - 500 mg BID",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -11277,7 +11114,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nLandersdorfer 2009_500mg_p.o._b.i.d._21\n2020-09-09 13:24"
+          "OriginText": "Probenecid-Model\nLandersdorfer 2009_500mg_p.o._b.i.d._21\n2024-08-28 10:47"
         }
       ]
     },
@@ -11320,8 +11157,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -11399,13 +11235,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -11423,17 +11256,6 @@
               }
             },
             {
-              "Name": "Selen 1982_2000mg_p.o._s.d._30-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Selen 1982_2000mg_p.o._s.d._30|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Selen 1982 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=5)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Selen 1982 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=5)|Time",
               "Y": "Selen 1982 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=5)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -11445,7 +11267,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Selen 1982 - 2000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -11463,7 +11285,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nSelen 1982_2000mg_p.o._s.d._30\n2020-09-09 13:25"
+          "OriginText": "Probenecid-Model\nSelen 1982_2000mg_p.o._s.d._30\n2024-08-28 11:02"
         }
       ]
     },
@@ -11652,7 +11474,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Vree 1992 - 1000 mg po ",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -11859,7 +11681,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Vree 1992 - 1500 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12066,7 +11888,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Vree 1992 - 250 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12273,7 +12095,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Vree 1992 - 500 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12462,7 +12284,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Vree 1993 - 1000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12526,8 +12348,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -12605,13 +12426,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -12629,17 +12447,6 @@
               }
             },
             {
-              "Name": "Emanuelsson 1987_2000mg_p.o._s.d._13-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Emanuelsson 1987_2000mg_p.o._s.d._13|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Emanuelsson 1987 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=6)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Emanuelsson 1987 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=6)|Time",
               "Y": "Emanuelsson 1987 - 2000 mg po - Probenecid - PO - 2000 mg - Plasma - agg. (n=6)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -12651,7 +12458,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Emanuelsson 1987 - 2000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12669,7 +12476,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nEmanuelsson 1987_2000mg_p.o._s.d._13\n2020-09-09 13:20"
+          "OriginText": "Probenecid-Model\nEmanuelsson 1987_2000mg_p.o._s.d._13\n2024-08-28 11:01"
         }
       ]
     },
@@ -12735,8 +12542,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -12814,8 +12620,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
@@ -12836,17 +12641,6 @@
               }
             },
             {
-              "Name": "Landersdorfer 2010_3000mg_p.o._m.d._50-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Landersdorfer 2010_3000mg_p.o._m.d._50|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Landersdorfer 2010 - 500-1000-500x3 mg - Probenecid - PO - 500;1000;500;500;500 mg - Plasma - agg. (n=12)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Landersdorfer 2010 - 500-1000-500x3 mg - Probenecid - PO - 500;1000;500;500;500 mg - Plasma - agg. (n=12)|Time",
               "Y": "Landersdorfer 2010 - 500-1000-500x3 mg - Probenecid - PO - 500;1000;500;500;500 mg - Plasma - agg. (n=12)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -12858,7 +12652,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Landersdorfer 2010 - 500-1000-500x3 mg",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -12876,7 +12670,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nLandersdorfer 2010_3000mg_p.o._m.d._50\n2020-09-09 13:24"
+          "OriginText": "Probenecid-Model\nLandersdorfer 2010_3000mg_p.o._m.d._50\n2024-08-28 10:47"
         }
       ]
     },
@@ -12922,8 +12716,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -13001,13 +12794,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -13025,17 +12815,6 @@
               }
             },
             {
-              "Name": "Emanuelsson 1987_1000mg_p.o._s.d._12-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Emanuelsson 1987_1000mg_p.o._s.d._12|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Emanuelsson 1987 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=6)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Emanuelsson 1987 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=6)|Time",
               "Y": "Emanuelsson 1987 - 1000 mg po - Probenecid - PO - 1000 mg - Plasma - agg. (n=6)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -13047,7 +12826,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Emanuelsson 1987 - 1000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -13065,7 +12844,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nEmanuelsson 1987_1000mg_p.o._s.d._12\n2020-09-09 13:19"
+          "OriginText": "Probenecid-Model\nEmanuelsson 1987_1000mg_p.o._s.d._12\n2024-08-28 11:00"
         }
       ]
     },
@@ -13111,8 +12890,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -13190,13 +12968,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -13214,17 +12989,6 @@
               }
             },
             {
-              "Name": "Emanuelsson 1987_500mg_p.o._s.d._11-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Emanuelsson 1987_500mg_p.o._s.d._11|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Emanuelsson 1987 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=6)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Emanuelsson 1987 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=6)|Time",
               "Y": "Emanuelsson 1987 - 500 mg po - Probenecid - PO - 500 mg - Plasma - agg. (n=6)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -13236,7 +13000,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Emanuelsson 1987 - 500 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -13254,7 +13018,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nEmanuelsson 1987_500mg_p.o._s.d._11\n2020-09-09 13:22"
+          "OriginText": "Probenecid-Model\nEmanuelsson 1987_500mg_p.o._s.d._11\n2024-08-28 11:01"
         }
       ]
     },
@@ -13300,8 +13064,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -13379,13 +13142,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -13403,17 +13163,6 @@
               }
             },
             {
-              "Name": "Shen 2019_1000mg_p.o._s.d._5003-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Shen 2019_1000mg_p.o._s.d._5003|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Shen 2019 - 1000 mg po - Probenecid - po - 1000 mg - Plasma - agg. (n=14)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Shen 2019 - 1000 mg po - Probenecid - po - 1000 mg - Plasma - agg. (n=14)|Time",
               "Y": "Shen 2019 - 1000 mg po - Probenecid - po - 1000 mg - Plasma - agg. (n=14)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -13425,7 +13174,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Shen 2019 - 1000 mg po",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -13443,7 +13192,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nShen 2019_1000mg_p.o._s.d._5003\n2020-09-09 13:25"
+          "OriginText": "Probenecid-Model\nShen 2019_1000mg_p.o._s.d._5003\n2024-08-28 11:03"
         }
       ]
     },
@@ -13494,11 +13243,7 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)",
-        "Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-        "Organism|Kidney|Plasma|Probenecid|Concentration in container",
-        "Organism|Kidney|Interstitial|Probenecid|Concentration in container",
-        "Organism|Kidney|Probenecid|Interstitial Unbound"
+        "Organism|PeripheralVenousBlood|Probenecid|Plasma (Peripheral Venous Blood)"
       ],
       "OutputMappings": [
         {
@@ -13576,13 +13321,10 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "%",
-              "Dimension": "Fraction",
+              "Unit": "",
               "Type": "Y2",
               "GridLines": false,
               "Visible": true,
-              "Min": 0.0,
-              "Max": 10.0,
               "DefaultColor": "#FFFFFF",
               "DefaultLineStyle": "Dash",
               "Scaling": "Linear",
@@ -13600,17 +13342,6 @@
               }
             },
             {
-              "Name": "Smith 1980_1000mg_p.o._b.i.d._6002-Probenecid-Kidney-Urine-Fraction excreted to urine",
-              "X": "Time",
-              "Y": "Smith 1980_1000mg_p.o._b.i.d._6002|Organism|Kidney|Urine|Probenecid|Fraction excreted to urine",
-              "CurveOptions": {
-                "yAxisType": "Y2",
-                "Color": "#C0C000",
-                "LegendIndex": 2,
-                "LineStyle": "Dash"
-              }
-            },
-            {
               "Name": "Smith 1980a - 1000 mg BID - Probenecid - PO - 1000;1000 mg - Plasma - agg. (n=4)-Probenecid-Peripheral Venous Blood-Plasma-ArithmeticMean",
               "X": "Smith 1980a - 1000 mg BID - Probenecid - PO - 1000;1000 mg - Plasma - agg. (n=4)|Time",
               "Y": "Smith 1980a - 1000 mg BID - Probenecid - PO - 1000;1000 mg - Plasma - agg. (n=4)|ObservedData|Peripheral Venous Blood|Plasma|Probenecid|ArithmeticMean",
@@ -13622,7 +13353,7 @@
               }
             }
           ],
-          "Name": "Time Profile Analysis",
+          "Name": "Smith 1980a - 1000 mg BID ",
           "FontAndSize": {
             "Fonts": {
               "AxisSize": 10,
@@ -13640,7 +13371,7 @@
             "BackColor": "#00FFFFFF",
             "DiagramBackColor": "#FFFFFF"
           },
-          "OriginText": "Probenecid_09092020\nSmith 1980a_1000mg_p.o._b.i.d._6002\n2020-09-09 13:25"
+          "OriginText": "Probenecid-Model\nSmith 1980_1000mg_p.o._b.i.d._6002\n2024-08-28 10:59"
         }
       ]
     }
@@ -16270,10 +16001,9 @@
             "MolWeight": 301.36
           },
           "Values": [
-            5.0
+            0.05
           ],
-          "Dimension": "Fraction",
-          "Unit": "%"
+          "Dimension": "Fraction"
         }
       ],
       "BaseGrid": {
@@ -16399,10 +16129,9 @@
             "MolWeight": 301.36
           },
           "Values": [
-            2.0
+            0.02
           ],
-          "Dimension": "Fraction",
-          "Unit": "%"
+          "Dimension": "Fraction"
         }
       ],
       "BaseGrid": {
@@ -16528,10 +16257,9 @@
             "MolWeight": 301.36
           },
           "Values": [
-            0.3
+            0.003
           ],
-          "Dimension": "Fraction",
-          "Unit": "%"
+          "Dimension": "Fraction"
         }
       ],
       "BaseGrid": {
@@ -16657,10 +16385,9 @@
             "MolWeight": 301.36
           },
           "Values": [
-            1.1
+            0.011
           ],
-          "Dimension": "Fraction",
-          "Unit": "%"
+          "Dimension": "Fraction"
         }
       ],
       "BaseGrid": {
@@ -16796,7 +16523,7 @@
             16.266
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -16940,7 +16667,7 @@
             9.80748
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18002,7 +17729,7 @@
             10.2374
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18686,7 +18413,7 @@
             3.21504
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
@@ -18830,7 +18557,7 @@
             0.734581
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "µg/ml"
+          "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
