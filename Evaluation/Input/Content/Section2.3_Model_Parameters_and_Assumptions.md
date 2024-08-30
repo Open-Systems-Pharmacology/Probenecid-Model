@@ -8,7 +8,7 @@ The dissolution of tablets was implemented via empirical Weibull dissolution. A 
 
 Probenecid is highly bound to plasma proteins (approx. 88 %) (see [Section 2.2.1](#221-in-vitro-and-physicochemical-data)). A value of 12% was used in this PBPK model for `Fraction unbound (plasma, reference value)`. The major binding partner was set to albumin (see [Section 2.2.1](#221-in-vitro-and-physicochemical-data)).
 
-An important parameter influencing the resulting volume of distribution is lipophilicity. The reported experimental logP values are in the range of -0.52 to 3.7 (see [Section 2.2.1](#221-in-vitro-and-physicochemical-data)) which served as a starting value. Finally, the model parameters `Lipophilicity` was optimized to match clinical data (see also [Section 2.3.4](#234-automated-parameter-identification)).
+An important parameter influencing the resulting volume of distribution is lipophilicity. The reported experimental logP values are in the range of -0.52 to 3.7 (see [Section 2.2.1](#221-in-vitro-and-physicochemical-data)) which served as a starting value. Finally, the model parameter `Lipophilicity` was optimized to match clinical data (see also [Section 2.3.4](#234-automated-parameter-identification)).
 
 After testing the available organ-plasma partition coefficient and cell permeability calculation methods built in PK-Sim, observed clinical data was best described by choosing the partition coefficient calculation by `PK-Sim Standard` and cellular permeability calculation by `Charge dependent Schmitt normalized to PK-Sim`.
 
@@ -31,19 +31,19 @@ Additionally, renal clearance assumed to be mainly driven by glomerular filtrati
 
 ### 2.3.4 Automated Parameter Identification
 
-This is the result of the final parameter identification:
+These are the parameters estimated in the final parameter identification:
 
-| Model Parameter                | Optimized Value | Unit      |
-| ------------------------------ | --------------- | --------- |
-| `Lipophilicity`                | 1.34            | Log Units |
-| `GFR fraction`                 | 0.03            |           |
-| `kcat` (UGT1A9)                | 74.92           | 1/min     |
-| `km` (OAT3)                    | 12.18           | µmol/L    |
-| `kcat` (OAT3)                  | 1118.934        | 1/min     |
-| `Specific intestinal permeability`| 3.97E-4      | cm/min    |
-| `Dissolution time (50% dissolved)`| 44.25        | min       |
-| `Dissolution shape`               | 0.58         | min       |
-| `Dissolution time (50% dissolved)` (Broken tablet)| 0.08 | min  |
-| `Dissolution shape` (broken tablet) | 0.08       |           |
+| Model Parameter                | 
+| ------------------------------ | 
+| `Lipophilicity`                | 
+| `GFR fraction`                 |
+| `kcat` (UGT1A9)                | 
+| `km` (OAT3)                    |
+| `kcat` (OAT3)                  | 
+| `Specific intestinal permeability`|
+| `Dissolution time (50% dissolved)`| 
+| `Dissolution shape`               | 
+| `Dissolution time (50% dissolved)` (Broken tablet)|
+| `Dissolution shape` (broken tablet) | 
 
  

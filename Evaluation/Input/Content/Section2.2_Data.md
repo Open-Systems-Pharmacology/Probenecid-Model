@@ -1,6 +1,6 @@
 ### 2.2.1 In vitro and physicochemical data
 
-A literature search was performed to collect available information on physicochemical properties of probenecid. The obtained information from literature is summarized in the table below, and is used for model building.
+A literature search was performed to collect available information on physicochemical properties of probenecid. The obtained information from literature is summarized in the table below, and is used for model building. Final model parameters are stated in [Section 3.1](#31-probenecid-final-input-parameters).
 
 | **Parameter**           | **Unit** | **Value** | Source                               | **Description**                                              |
 | :---------------------- | -------- | --------- | ------------------------------------ | ------------------------------------------------------------ |
@@ -20,7 +20,9 @@ A literature search was performed to collect available information on physicoche
 | Ki UGT1A9               | µmol/L   | 242       | Measured                             | Inhibition of UGT1A9                                         |
 | Ki OAT3                 | µmol/L   | 5.41      | [Tsuruya 2016](#5-references)        | Inhibition of OAT3                                           |
 | Ki OATP1B1              | µmol/L   | 39.8      | [Izumi 2016](#5-references)          | Inhibition of OATP1B1                                        |
-| Ki OATP1B1              | µmol/L   | 17.89      | In vivo Ki estimated based on CP-I data| Inhibition of OATP1B1                                        |
+| Ki OATP1B1              | µmol/L   | 17.89      | In vivo Ki estimated based on CP-I data| Inhibition of OATP1B1                                     |
+| Ki MRP4 (ABCC4)         | µmol/L   |    87.40   |     Probenecid-Furosemid-DDI*            |    Inhibition of MRP4                 |
+*To describe the competitive inhibition of MRP4 by probenecid, the corresponding inhibition constant was optimized during the furosemide PBPK model parameter identification, using the clinical data of one of the probenecid-furosemide interaction studies ([Probenecid-Furosemid-DDI Repository](https://github.com/Open-Systems-Pharmacology/Probenecid-Furosemide-DDI)).
 
 ### 2.2.2 Clinical data
 
